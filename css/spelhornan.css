@@ -4,22 +4,61 @@
     box-sizing: border-box;
 }
 
+#grid_wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+        "he he he"
+        "a1 ma a2"
+    ;
+
+}
+
+header {
+    background: darkviolet;
+    grid-area: he;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10vh;
-    background-color: lightgreen;
+    width: 200px;
+    background-color: darkviolet;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: flex-end;
 }
+
+main {
+    background: lightcoral;
+    grid-area: ma;
+}
+
+#aside_1 {
+    background: greenyellow;
+    grid-area: a1;
+}
+
+#aside_2 {
+    background: greenyellow;
+    grid-area: a2;
+}
+
 
 #nav-links {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 90vh;
-    background-color: lightgreen;
+    background-color: darkviolet;
     position: absolute;
     right: 0px;
     top: -90vh;
@@ -27,11 +66,12 @@ nav {
     align-items: center;
     list-style: none;
     transition: all 0.5s;
+    z-index: 1;
 }
 
 #nav-links a {
     text-decoration: none;
-    color: lightseagreen;
+    color: black;
     letter-spacing: 0.1875rem;
     font-weight: bold;
     font-size: 1.25rem;
@@ -49,14 +89,14 @@ nav {
 }
 
 #nav-links a:hover {
-    color: lightgreen;
-    background-color: lightseagreen;
+    color: darkviolet;
+    background-color: black;
 }
 
 .burger_line {
-    width: 25px;
-    height: 3px;
-    background-color: lightseagreen;
+    width: 30px;
+    height: 4px;
+    background-color: black;
     margin: 5px;
     border-radius: 10%;
     transition: all 0.5s;
@@ -67,14 +107,15 @@ nav {
 }
 
 .crossed_line #linje_1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-5.9px, 7px);
 }
 
 .crossed_line #linje_3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-5.9px, -7px);
 }
 
 #burger {
     margin-right: 87.5px;
     cursor: pointer;
+    z-index: 3;
 }
