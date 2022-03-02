@@ -5,7 +5,6 @@
 }
 
 #grid_wrapper {
-    width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 2.5fr 1fr;
@@ -26,6 +25,10 @@ header {
     z-index: 2;
 }
 
+header h1 {
+    margin-left: 5vw;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -36,10 +39,11 @@ nav {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: flex-end;
 }
-
+/*Fixa opacity*/
 main {
-    background: lightcoral;
+    background: grey;
     grid-area: ma;
+    opacity: 50%;
 }
 
 #aside_1 {
@@ -52,21 +56,22 @@ main {
     grid-area: a2;
 }
 
-
 #nav-links {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 90vh;
+    height: 100vh;
     background-color: darkviolet;
     position: absolute;
     right: 0px;
-    top: -90vh;
+    top: -100vh;
     width: 200px;
     align-items: center;
     list-style: none;
     transition: all 0.5s;
     z-index: 1;
+    margin-left: -83.4vw;
+    padding-top: calc(100vh / 6);
 }
 
 #nav-links a {
@@ -89,8 +94,8 @@ main {
 }
 
 #nav-links a:hover {
-    color: darkviolet;
-    background-color: black;
+    color: black;
+    font-size: 1.1rem;
 }
 
 .burger_line {
@@ -98,7 +103,7 @@ main {
     height: 4px;
     background-color: black;
     margin: 5px;
-    border-radius: 10%;
+    border-radius: 15%;
     transition: all 0.5s;
 }
 
@@ -118,4 +123,42 @@ main {
     margin-right: 87.5px;
     cursor: pointer;
     z-index: 3;
+}
+
+@media screen and (max-width:800px) {
+    #nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 90vh;
+        position: absolute;
+        right: 0px;
+        top: -84.5vh;
+        width: 100%;
+        align-items: center;
+        list-style: none;
+        transition: all 0.5s;
+    }
+    
+}
+/*Own scroll bar*/
+/*Fixa det vita och opacityn*/
+/* width */
+::-webkit-scrollbar {
+   width: 12.5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+   background-color: darkgrey; 
+   /*box-shadow: inset 0 0 5px black;*/
+   border-radius: 10px;
+   opacity: 50%;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: grey;
+   border-radius: 10px;
+   opacity: 10%;
 }
