@@ -17,12 +17,13 @@
 }
 
 header {
-    background: darkviolet;
+    background: rgb(114, 31, 161);
     grid-area: he;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 2;
+    border-bottom: 0.5vh solid black;
 }
 
 header h1 {
@@ -34,26 +35,61 @@ nav {
     justify-content: center;
     align-items: center;
     height: 10vh;
-    width: 200px;
-    background-color: darkviolet;
+    width: 15.6vw;
+    background-color:  rgb(114, 31, 161);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: flex-end;
 }
-/*Fixa opacity*/
+
 main {
-    background: grey;
+    display: flex;
+    background: rgb(91, 25, 129);
     grid-area: ma;
-    opacity: 50%;
+    overflow-y: scroll;
+    flex-direction: column;
+    align-items: center;
+}
+
+main::-webkit-scrollbar-track {
+    background-color: inherit; 
+ }
+
+.main_content {
+    height: 32.8vh;
+    width: 39vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 8.2vh;
+    flex: none;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+#main_content-first {
+    margin-top: 8.2vh;
+}
+
+.mini_title {
+    font-size: 45px;
+    font-weight: 150;
+    font-family: 'Rubik', sans-serif;
+}
+
+.text {
+    font-size: 20px;
 }
 
 #aside_1 {
     background: greenyellow;
     grid-area: a1;
+    border-right: 0.75vh solid black;
+    overflow: hidden;
 }
 
 #aside_2 {
     background: greenyellow;
     grid-area: a2;
+    border-left: 0.75vh solid black;
+    overflow: hidden;
 }
 
 #nav-links {
@@ -61,17 +97,18 @@ main {
     flex-direction: column;
     justify-content: space-around;
     height: 100vh;
-    background-color: darkviolet;
+    background-color: rgb(114, 31, 161);
     position: absolute;
     right: 0px;
     top: -100vh;
-    width: 200px;
+    width: 285px;
     align-items: center;
     list-style: none;
     transition: all 0.5s;
     z-index: 1;
     margin-left: -83.4vw;
     padding-top: calc(100vh / 6);
+    border-left: 0.5vh solid black;
 }
 
 #nav-links a {
@@ -82,7 +119,7 @@ main {
     font-size: 1.25rem;
     text-transform: uppercase;
     width: 200px;
-    height: 3rem;
+    height: 2.9rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +157,7 @@ main {
 }
 
 #burger {
-    margin-right: 87.5px;
+    margin-right: 125px;
     cursor: pointer;
     z-index: 3;
 }
@@ -133,7 +170,7 @@ main {
         height: 90vh;
         position: absolute;
         right: 0px;
-        top: -84.5vh;
+        top: -85.5vh;
         width: 100%;
         align-items: center;
         list-style: none;
@@ -142,23 +179,20 @@ main {
     
 }
 /*Own scroll bar*/
-/*Fixa det vita och opacityn*/
 /* width */
 ::-webkit-scrollbar {
    width: 12.5px;
 }
-  
+
 /* Track */
 ::-webkit-scrollbar-track {
-   background-color: darkgrey; 
-   /*box-shadow: inset 0 0 5px black;*/
-   border-radius: 10px;
-   opacity: 50%;
-}
-  
+    background-color: darkviolet;
+ }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-   background: grey;
+   background: lightgray;
    border-radius: 10px;
-   opacity: 10%;
+   background-clip: padding-box;
 }
+
+
