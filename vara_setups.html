@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/spelhornan.css">
+    <title>Spelhörnan</title>
+</head>
+<body>
+    
+    <div id="grid_wrapper">
+
+        <header>
+            <a href="index.html" id="logga">
+                <h1>SPELH</h1><img src="img/logga.png" id="logga_img" alt="logga bild"><h1>RNAN</h1>
+            </a>
+
+            <h2 id="oppetider">Öppet: Mån-Sön</h2>
+
+            <nav>
+                <ul id="nav-links">
+                
+                    <li><a href="#">Boka plats</a></li>
+                    <li><a href="vart_finns_vi.html">Plats</a></li>
+                    <li><a href="vara_setups.html">Våra setups</a></li>
+                
+                </ul>
+                
+                <div id="burger">
+
+                    <div id="linje_1" class="burger_line"></div>
+                    <div id="linje_2" class="burger_line"></div>
+                    <div id="linje_3" class="burger_line"></div>
+
+                </div>
+                
+            </nav>
+        </header>
+
+        
+        <main id="main_vara_setups">
+
+            
+
+            <div class="bild_box">
+
+                <div id="bilder_i_box">
+
+                    <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+
+                    <div class="slides">
+                        <img src="img/LAN.bild1.jpg" style="width:100%">
+                    </div>
+                    <div class="slides">
+                        <img src="img/LAN.bild2.jpg" style="width:100%">
+                    </div>
+                    <div class="slides">
+                        <img src="img/LAN.bild3.jpeg" style="width:100%">
+                    </div>
+
+                    <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+                </div>
+
+                <p class="text">Här är bilder på våra setups</p>
+
+            </div>
+
+
+        </main>
+        
+
+        <aside id="aside_1">
+
+            <img src="img/Aside_bild.jpg" alt="Aside bild tetris style">
+
+        </aside>
+        <aside id="aside_2">
+
+            <img src="img/Aside_bild.jpg" alt="Aside bild tetris style">
+
+        </aside>
+
+        
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -26,8 +26,32 @@ header {
     border-bottom: 0.5vh solid black;
 }
 
-header h1 {
+#logga {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     margin-left: 5vw;
+    text-decoration: none;
+    color: black;
+}
+
+#logga_img {
+    height: 2.5rem;
+    width: auto;
+    position: relative;
+    top: -7.5px;
+    color: black;
+    flex: none;
+}
+
+#logga h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#oppetider {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
 }
 
 nav {
@@ -41,7 +65,50 @@ nav {
     justify-content: flex-end;
 }
 
-main {
+#main_vara_setups {
+    display: flex;
+    background: rgb(91, 25, 129);
+    overflow-y: scroll;
+    align-items: center;
+    justify-content: center;
+}
+
+.w3-button {
+    height: 8.2vh;
+}
+
+.bild_box {
+    width: 44vw;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 8.2vh;
+    margin-top: 30vh;
+    display: flex;
+    flex: none;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    flex-direction: column;
+}
+
+#bilder_i_box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6.6vh;
+}
+
+#plats {
+    width: 37.5vw;
+    height: max-content;
+    border-radius: 1rem;
+}
+
+main::-webkit-scrollbar-track {
+    background-color: inherit; 
+}
+
+#main_startsida {
     display: flex;
     background: rgb(91, 25, 129);
     grid-area: ma;
@@ -50,12 +117,8 @@ main {
     align-items: center;
 }
 
-main::-webkit-scrollbar-track {
-    background-color: inherit; 
- }
-
 .main_content {
-    height: 32.8vh;
+    height: max-content;
     width: 39vw;
     background-color: rgba(255, 255, 255, 0.8);
     margin-bottom: 8.2vh;
@@ -68,28 +131,40 @@ main::-webkit-scrollbar-track {
     margin-top: 8.2vh;
 }
 
+.slides {
+    width: auto;
+    height: 75vh;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 1rem;
+}
+
 .mini_title {
-    font-size: 45px;
-    font-weight: 150;
+    font-size: 30px;
+    font-weight: 700;
     font-family: 'Rubik', sans-serif;
 }
 
 .text {
-    font-size: 20px;
+    font-size: 17.5px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
 }
 
 #aside_1 {
-    background: greenyellow;
     grid-area: a1;
     border-right: 0.75vh solid black;
     overflow: hidden;
+    width: auto;
+    height: 85vh;
 }
 
 #aside_2 {
-    background: greenyellow;
     grid-area: a2;
     border-left: 0.75vh solid black;
     overflow: hidden;
+    width: auto;
+    height: 85vh;
 }
 
 #nav-links {
@@ -136,8 +211,8 @@ main::-webkit-scrollbar-track {
 }
 
 .burger_line {
-    width: 30px;
-    height: 4px;
+    width: 37.5px;
+    height: 5px;
     background-color: black;
     margin: 5px;
     border-radius: 15%;
@@ -149,11 +224,11 @@ main::-webkit-scrollbar-track {
 }
 
 .crossed_line #linje_1 {
-    transform: rotate(-45deg) translate(-5.9px, 7px);
+    transform: rotate(-45deg) translate(-7px, 7px);
 }
 
 .crossed_line #linje_3 {
-    transform: rotate(45deg) translate(-5.9px, -7px);
+    transform: rotate(45deg) translate(-7px, -7px);
 }
 
 #burger {
@@ -167,7 +242,7 @@ main::-webkit-scrollbar-track {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 90vh;
+        height: 85vh;
         position: absolute;
         right: 0px;
         top: -85.5vh;
@@ -175,6 +250,13 @@ main::-webkit-scrollbar-track {
         align-items: center;
         list-style: none;
         transition: all 0.5s;
+        border-top: 0.6vh solid black;
+        border-left: rgb(114, 31, 161);
+    }
+    #burger {
+        margin-right: 75px;
+        cursor: pointer;
+        z-index: 3;
     }
     
 }
