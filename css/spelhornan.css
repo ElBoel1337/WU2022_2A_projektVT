@@ -71,20 +71,41 @@ nav {
     overflow-y: scroll;
     align-items: center;
     justify-content: center;
+    grid-area: ma;
 }
 
 .w3-button {
-    height: 8.2vh;
+    font-size: 10vh;
+    color: black;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
 }
 
-.bild_box {
+#bild_box {
     width: 44vw;
     height: max-content;
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.8);
     margin-bottom: 8.2vh;
-    margin-top: 30vh;
+    margin-top: 70vh;
+    display: flex;
+    flex: none;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    flex-direction: column;
+}
+
+#map_box {
+    width: 44vw;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 8.2vh;
+    margin-top: 7.35vh;
     display: flex;
     flex: none;
     padding: 1.5rem;
@@ -102,6 +123,47 @@ nav {
     width: 37.5vw;
     height: max-content;
     border-radius: 1rem;
+    margin-bottom: 5vh;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.plats_titel {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 5vh;
+}
+
+#setup_title {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 3vh;
+}
+
+.personal {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.personal_text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 2vw;
+}
+
+.namn {
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 1vh;
+}
+
+.bild_personal {
+    height: 30vh;
+    width: auto;
 }
 
 main::-webkit-scrollbar-track {
@@ -137,6 +199,8 @@ main::-webkit-scrollbar-track {
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 1rem;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
 }
 
 .mini_title {
@@ -151,20 +215,34 @@ main::-webkit-scrollbar-track {
     font-weight: 500;
 }
 
-#aside_1 {
-    grid-area: a1;
-    border-right: 0.75vh solid black;
+.text2 {
+    font-size: 17.5px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    margin-top: 3vh;
+}
+
+.text_personal {
+    font-size: 17.5px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+#aside_1, #aside_2 {
     overflow: hidden;
     width: auto;
     height: 85vh;
+    background: rgb(114, 31, 161);
+}
+
+#aside_1 {
+    grid-area: a1;
+    border-right: 0.75vh solid black;
 }
 
 #aside_2 {
     grid-area: a2;
     border-left: 0.75vh solid black;
-    overflow: hidden;
-    width: auto;
-    height: 85vh;
 }
 
 #nav-links {
@@ -238,6 +316,36 @@ main::-webkit-scrollbar-track {
 }
 
 @media screen and (max-width:800px) {
+
+    #oppetider {
+        display: none;
+    }
+
+    #aside_1, #aside_2 {
+        display: none;
+    }
+
+    #grid_wrapper {
+        grid-template-columns: 0 1fr 0;
+    }
+
+    #map_box {
+        width: 80vw;
+    }
+
+    #plats {
+        width: 65vw;
+        height: max-content;
+    }
+
+    .main_content {
+        width: 80vw;
+    }
+
+    #bild_box {
+        width: 80vw;
+    }
+
     #nav-links {
         display: flex;
         flex-direction: column;
@@ -254,23 +362,49 @@ main::-webkit-scrollbar-track {
         border-left: rgb(114, 31, 161);
     }
     #burger {
-        margin-right: 75px;
+        margin-right: 5vw;
         cursor: pointer;
         z-index: 3;
     }
+
+    #bilder_i_box {
+        width: auto;
+        height: 40vh;
+    }
+
+    .w3-button {
+        font-size: 5vh;
+    }
+    .slides {
+        width: auto;
+        height: 35vh;
+    }
+
+    #bild_box {
+        margin-top: 70vh;
+    }
+
+    .text_personal {
+        display: none;
+    }
     
 }
+
+@media screen and (max-width: 800px) {
+
+
+}
+
+
 /*Own scroll bar*/
-/* width */
 ::-webkit-scrollbar {
    width: 12.5px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     background-color: darkviolet;
- }
-/* Handle */
+}
+
 ::-webkit-scrollbar-thumb {
    background: lightgray;
    border-radius: 10px;

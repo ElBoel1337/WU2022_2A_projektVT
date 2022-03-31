@@ -18,12 +18,15 @@ showDivs(slideIndex);
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
-
+/*Funktion*/
 function showDivs(n) {
+  /*Variabel*/
   var i;
+  /*Array*/
   var x = document.getElementsByClassName("slides");
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
+  /*For-loop*/
   for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";  
   }
