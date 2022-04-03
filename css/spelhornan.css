@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/*Grid*/
 #grid_wrapper {
     height: 100vh;
     display: grid;
@@ -16,218 +17,7 @@
 
 }
 
-header {
-    background: rgb(114, 31, 161);
-    grid-area: he;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 2;
-    border-bottom: 0.5vh solid black;
-}
-
-#logga {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 5vw;
-    text-decoration: none;
-    color: black;
-}
-
-#logga_img {
-    height: 2.5rem;
-    width: auto;
-    position: relative;
-    top: -7.5px;
-    color: black;
-    flex: none;
-}
-
-#logga h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-#oppetider {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2rem;
-    letter-spacing: 0.1rem;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    width: 15.6vw;
-    background-color:  rgb(114, 31, 161);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    justify-content: flex-end;
-}
-
-#main_vara_setups {
-    display: flex;
-    background: rgb(91, 25, 129);
-    overflow-y: scroll;
-    align-items: center;
-    justify-content: center;
-    grid-area: ma;
-}
-
-.w3-button {
-    font-size: 10vh;
-    color: black;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    outline: none;
-}
-
-#bild_box {
-    width: 44vw;
-    height: max-content;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 8.2vh;
-    margin-top: 70vh;
-    display: flex;
-    flex: none;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    flex-direction: column;
-}
-
-#map_box {
-    width: 44vw;
-    height: max-content;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 8.2vh;
-    margin-top: 7.35vh;
-    display: flex;
-    flex: none;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    flex-direction: column;
-}
-
-#bilder_i_box {
-    display: flex;
-    align-items: center;
-    margin-bottom: 6.6vh;
-}
-
-#plats {
-    width: 37.5vw;
-    height: max-content;
-    border-radius: 1rem;
-    margin-bottom: 5vh;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-.plats_titel {
-    font-family: 'Rubik', sans-serif;
-    font-size: 2rem;
-    margin-bottom: 5vh;
-}
-
-#setup_title {
-    font-family: 'Rubik', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 3vh;
-}
-
-.personal {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-}
-
-.personal_text {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    margin-left: 2vw;
-}
-
-.namn {
-    font-family: 'Rubik', sans-serif;
-    margin-bottom: 1vh;
-}
-
-.bild_personal {
-    height: 30vh;
-    width: auto;
-}
-
-main::-webkit-scrollbar-track {
-    background-color: inherit; 
-}
-
-#main_startsida {
-    display: flex;
-    background: rgb(91, 25, 129);
-    grid-area: ma;
-    overflow-y: scroll;
-    flex-direction: column;
-    align-items: center;
-}
-
-.main_content {
-    height: max-content;
-    width: 39vw;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 8.2vh;
-    flex: none;
-    padding: 1.5rem;
-    border-radius: 1rem;
-}
-
-#main_content-first {
-    margin-top: 8.2vh;
-}
-
-.slides {
-    width: auto;
-    height: 75vh;
-    overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border-radius: 1rem;
-    margin-left: 1.5vw;
-    margin-right: 1.5vw;
-}
-
-.mini_title {
-    font-size: 30px;
-    font-weight: 700;
-    font-family: 'Rubik', sans-serif;
-}
-
-.text {
-    font-size: 17.5px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-}
-
-.text2 {
-    font-size: 17.5px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    margin-top: 3vh;
-}
-
-.text_personal {
-    font-size: 17.5px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-}
-
+/*Asides*/
 #aside_1, #aside_2 {
     overflow: hidden;
     width: auto;
@@ -243,6 +33,59 @@ main::-webkit-scrollbar-track {
 #aside_2 {
     grid-area: a2;
     border-left: 0.75vh solid black;
+}
+
+/*Header*/
+header {
+    background: rgb(114, 31, 161);
+    grid-area: he;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    border-bottom: 0.5vh solid black;
+}
+
+/*Logga*/
+#logga {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5vw;
+    text-decoration: none;
+    color: black;
+}
+
+#logga h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#logga_img {
+    height: 2.5rem;
+    width: auto;
+    position: relative;
+    top: -7.5px;
+    color: black;
+    flex: none;
+}
+
+#oppetider {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+/*Meny/nav-links*/
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 15.6vw;
+    background-color:  rgb(114, 31, 161);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: flex-end;
 }
 
 #nav-links {
@@ -315,6 +158,174 @@ main::-webkit-scrollbar-track {
     z-index: 3;
 }
 
+/*Startsida*/
+main::-webkit-scrollbar-track {
+    background-color: inherit; 
+}
+
+#main_startsida {
+    display: flex;
+    background: rgb(91, 25, 129);
+    grid-area: ma;
+    overflow-y: scroll;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_content {
+    height: max-content;
+    width: 39vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 8.2vh;
+    flex: none;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+#main_content-first {
+    margin-top: 8.2vh;
+}
+
+.mini_title {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+}
+
+.text {
+    font-size: 17.5px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+.text2 {
+    font-size: 17.5px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    margin-top: 3vh;
+}
+
+/*Våra setups*/
+#main_vara_setups {
+    display: flex;
+    background: rgb(91, 25, 129);
+    overflow-y: scroll;
+    align-items: center;
+    justify-content: center;
+    grid-area: ma;
+}
+
+#bild_box {
+    width: 44vw;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 8.2vh;
+    margin-top: 70vh;
+    display: flex;
+    flex: none;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    flex-direction: column;
+}
+
+#bilder_i_box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6.6vh;
+}
+
+.slides {
+    width: auto;
+    height: 75vh;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 1rem;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+
+.w3-button {
+    font-size: 10vh;
+    color: black;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#setup_title {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 3vh;
+}
+
+/*Vart finns vi*/
+#map_box {
+    width: 44vw;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 8.2vh;
+    margin-top: 7.35vh;
+    display: flex;
+    flex: none;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    flex-direction: column;
+}
+
+.plats_titel {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 5vh;
+}
+
+#plats {
+    width: 37.5vw;
+    height: max-content;
+    border-radius: 1rem;
+    margin-bottom: 5vh;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/*Personal*/
+.personal {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.bild_personal {
+    height: 30vh;
+    width: auto;
+}
+
+.personal_text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 2vw;
+}
+
+.namn {
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 1vh;
+}
+
+.text_personal {
+    font-size: 17.5px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+/*Bredd Max 800px*/
 @media screen and (max-width:800px) {
 
     #oppetider {
@@ -390,13 +401,7 @@ main::-webkit-scrollbar-track {
     
 }
 
-@media screen and (max-width: 800px) {
-
-
-}
-
-
-/*Own scroll bar*/
+/*Scrollbar*/
 ::-webkit-scrollbar {
    width: 12.5px;
 }
