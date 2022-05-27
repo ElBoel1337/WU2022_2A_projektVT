@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/spelhornan.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Spelhörnan</title>
 </head>
 <body>
@@ -13,15 +13,15 @@
 
         <header>
             <a href="index.html" id="logga">
-                <h1>SPELH</h1><img src="img/logga.png" id="logga_img" alt="logga bild"><h1>RNAN</h1>
+                <h1>SPELH<img src="img/logga.png" id="logga_img" alt="logga bild">RNAN</h1>
             </a>
 
-            <h2 id="oppetider">Öppet: Mån-Sön</h2>
+            <p id="oppetider">Öppet: Mån-Sön</p>
 
             <nav>
                 <ul id="nav-links">
             
-                    <li><a href="vart_finns_vi.html">Plats</a></li>
+                    <li><a href="vart_finns_vi.html">Priser & plats</a></li>
                     <li><a href="vara_setups.html">Våra setups</a></li>
                     <li><a href="personal.html">Personal</a></li>
                 
@@ -43,9 +43,9 @@
 
             
 
-            <div id="bild_box">
+            <section id="bild_box">
 
-                <h3 class="plats_titel">Bilder på våra setups:</h3>
+                <h2 class="plats_titel">Bilder på våra setups</h2>
 
                 <div id="bilder_i_box">
 
@@ -65,18 +65,21 @@
 
                 </div>
                 
-                <h4 id="setup_title">Lite fakta om våra setups</h4>
+                <article id="list_box">
+                    <h4 id="setup_title">Lite fakta om våra setups</h4>
+                    <div class="text_och_bild">
+                        <p class="text2_2">January 10, 2007   
+                            En text om ingenting
+                            Det här är precis vad rubriken antyder: en text om ingenting. Faktum är att den faktiskt handlar om så lite att det nästan är mindre än noll--alltså mindre än ingenting, eller helt enkelt ingenting alls.
+                        </p>
+                        <img src="img/startsida_bild_3.jpg" class="bild_startsida_1" alt="Bild för startsida på setup">
+                    </div>
+                    <p class="text2_2">              
+                        Men det är inte i betydelsen ingenting som vi så ofta använder termen, alltså i betydelsen någonting. Nej, den här texten handlar inte om ”ingenting” på sådant sätt, för då skulle det innebära att det faktiskt är något men att vi väljer att kalla det
+                    </p>
+                </article>
 
-                <p class="text">January 10, 2007   
-                    
-                    En text om ingenting
-                    Det här är precis vad rubriken antyder: en text om ingenting. Faktum är att den faktiskt handlar om så lite att det nästan är mindre än noll--alltså mindre än ingenting, eller helt enkelt ingenting alls.
-                </p>
-                <p class="text2">              
-                    Men det är inte i betydelsen ingenting som vi så ofta använder termen, alltså i betydelsen någonting. Nej, den här texten handlar inte om ”ingenting” på sådant sätt, för då skulle det innebära att det faktiskt är något men att vi väljer att kalla det
-                </p>
-
-            </div>
+            </section>
 
 
         </main>

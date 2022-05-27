@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/spelhornan.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Spelhörnan</title>
 </head>
 <body>
@@ -13,15 +13,15 @@
 
         <header>
             <a href="index.html" id="logga">
-                <h1>SPELH</h1><img src="img/logga.png" id="logga_img" alt="logga bild"><h1>RNAN</h1>
+                <h1>SPELH<img src="img/logga.png" id="logga_img" alt="logga bild">RNAN</h1>
             </a>
             
-            <h2 id="oppetider">Öppet: Mån-Sön</h2>
+            <p id="oppetider">Öppet: Mån-Sön</p>
 
             <nav>
                 <ul id="nav-links">
                 
-                    <li><a href="vart_finns_vi.html">Plats</a></li>
+                    <li><a href="vart_finns_vi.html">Priser & plats</a></li>
                     <li><a href="vara_setups.html">Våra setups</a></li>
                     <li><a href="personal.html">Personal</a></li>
                 
@@ -39,14 +39,46 @@
         </header>
 
         <main id="main_startsida">
-            <div id="map_box">
-                <h3 class="plats_titel">Här är vi:</h3>
-                <img src="img/vart_finns_vi.jpg" id="plats" alt="bild på vart vi finns">
-                <p class="text">Öppet: Mån-Sön</p>
-                <p class="text">Adress: Origovägen 12 Göteborg</p>
-                <p class="text">Telefon nmr: 010-777 07 77</p>
-    
-            </div>
+            <section class="map_box">
+                <div class="list_och_position">
+                    <h2 class="mini_title">Priserna på våra utbud</h2>
+                    <article id="list_box">
+                        <ul class="unordered_list">Antal lediga platser:........7st</ul>
+                        <ul class="unordered_list">Vanlig plats:................150kr</ul>
+                        <ul class="unordered_list">Premium plats:...............240kr</ul>
+                        <ul class="unordered_list">Premium paket:...............300kr</ul>
+                        <ul class="unordered_list">LAN paket:...................340kr</ul>
+                        <ul class="unordered_list">LAT paket:...................330kr</ul>
+                        <ul class="unordered_list">FAT paket:...................290kr</ul>
+                        <ul class="unordered_list">Trim paket:...................540kr</ul>
+                        <ul class="unordered_list">Helg paket:...................1000kr</ul>
+                        <ul class="unordered_list">Per timme:...................90kr</ul>
+                    </article>
+                </div>
+            </section>
+            <section class="map_box">
+                <div class="list_och_position">
+                    <h2 id="position_title">Här finns vi</h2>
+                    <div class="text_och_bild">
+                        <div class="info">
+                            <p id="text1_2">January 10, 2007   
+                                En text om ingenting
+                                Det här är precis vad rubriken antyder: en text om ingenting. Faktum är att den faktiskt handlar om så lite att det nästan är mindre än noll--alltså mindre än ingenting, eller helt enkelt ingenting alls. Du gamla du fria du fjällhöga nord, dut tysta väldigt väldigt tysta ko.
+                            </p>
+                            <img src="img/vart_finns_vi_2.jpg" id="bild_startsida_3" alt="Bild för startsida på setup">
+                        </div>
+                        
+                    </div>
+                    <article id="position_box">
+                        <img src="img/vart_finns_vi.jpg" id="plats" alt="bild på vart vi finns">
+                        <div class="info">
+                            <p class="text3">Öppet: Mån-Sön</p>
+                            <p class="text3">Adress: Origovägen 12 Göteborg</p>
+                            <p class="text3">Telefon nmr: 010-777 07 77</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
         </main>
 
         <aside id="aside_1">

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/spelhornan.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Spelhörnan</title>
 </head>
 <body>
@@ -13,15 +13,15 @@
 
         <header>
             <a href="index.html" id="logga">
-                <h1>SPELH</h1><img src="img/logga.png" id="logga_img" alt="logga bild"><h1>RNAN</h1>
+                <h1>SPELH<img src="img/logga.png" id="logga_img" alt="logga bild">RNAN</h1>
             </a>
             
-            <h2 id="oppetider">Öppet: Mån-Sön</h2>
+            <p id="oppetider">Öppet: Mån-Sön</p>
 
             <nav>
                 <ul id="nav-links">
                 
-                    <li><a href="vart_finns_vi.html">Plats</a></li>
+                    <li><a href="vart_finns_vi.html">Priser & plats</a></li>
                     <li><a href="vara_setups.html">Våra setups</a></li>
                     <li><a href="personal.html">Personal</a></li>
                 
@@ -39,50 +39,75 @@
         </header>
 
         <main id="main_startsida">
-            <div class="main_content" id="main_content-first">
-                <h3 class="mini_title">Våran personal</h3>
 
-
-                <div class="personal">
-                    <img src="img/dmitry-vechorko-E9PFbdhZmus-unsplash.jpg" class="bild_personal" alt="Bild på personal">
+            <section class="main_content" id="main_content-first">
+                <h2 class="mini_title">Vår personal</h2>
+                <h3 class="personal_jobb">Platsansvarig</h3>
+                <article class="personal">
                     <div class="personal_text">
-                        <h4 class="namn">Klas Hansson</h4>
-                        <p class="text_personal">	
-                            January 10, 2007   
-                        
-                            En text om ingenting
-                            Det här är precis vad rubriken antyder: en text om ingenting. Faktum är att den faktiskt handlar om så lite att det nästan är mindre än noll.
+                        <div class="text_och_bild">
+                            <img src="img/personal_3.jpg" class="bild_personal" alt="Bild på personal">
+                            <div class="personal_text">
+                                <h5 class="namn">Klas Hansson</h5>
+                                <p class="text_personal">	
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eligendi, molestiae nisi maiores ad quisquam quasi in rerum dolores, fugiat assumenda eos distinctio recusand.
+                                </p>
+                            </div>
+                        </div>
+                        <h4 class="under_title">Vem är du?</h4>
+                        <p class="text_personal">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur quae, aut voluptatem inventore similique ipsa totam, perspiciatis illo accusantium atque perferendis optio quidem, libero doloribus!
+                        </p>
+                        <p class="text_personal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora asperiores delectus totam fugiat quas corrupti possimus.</p>
+                    </div>
+                </article>
+            </section>
+            
+            <section class="main_content">
+                <h3 class="personal_jobb">IT-ansvarig</h3>
+                <article class="personal">
+                    <div class="personal_text">
+                        <div id="text_och_bild_3">
+                            <img src="img/personal_1.jpg" class="bild_personal" alt="Bild på personal">
+                            <div class="personal_text">
+                                <h5 class="namn">Hans Mårtensson</h5>
+                                <p class="text_personal">	
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eligendi, molestiae nisi maiores ad quisquam quasi in rerum dolores, fugiat assumenda eos distinctio recusand.
+                                </p>
+                            </div>
+                        </div>
+                        <h4 class="under_title">Vem är du?</h4>
+                        <p class="text_personal">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur quae, aut voluptatem inventore similique ipsa totam, perspiciatis illo accusantium atque perferendis optio quidem, libero doloribus!
+                        </p>
+                        <p class="text_personal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt vitae accusantium fuga omnis neque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta?
                         </p>
                     </div>
-                </div>
+                </article>
+            </section>
 
-                <div class="personal">
-                    <img src="img/dmitry-vechorko-E9PFbdhZmus-unsplash.jpg" class="bild_personal" alt="Bild på personal">
+
+            <section class="main_content">
+                <h3 class="personal_jobb">Receptionist</h3>
+                <article class="personal">
                     <div class="personal_text">
-                        <h4 class="namn">Hans Mårtensson</h4>
-                        <p class="text_personal">	
-                            January 10, 2007   
-                        
-                            En text om ingenting
-                            Det här är precis vad rubriken antyder: en text om ingenting. Faktum är att den faktiskt handlar om så lite att det nästan är mindre än noll.
+                        <div class="text_och_bild">
+                            <img src="img/personal_2.jpg" class="bild_personal" alt="Bild på personal">
+                            <div class="personal_text">
+                                <h4 class="namn">Adam Kronberg</h4>
+                                <p class="text_personal">	
+                                    January 10, 2007 En text om ingenting. Det här är precis vad rubriken antyder: en text om ingenting. Faktum är att den faktiskt handlar om så lite att det nästan är mindre än noll.
+                                </p>
+                            </div>
+                        </div>
+                        <h5 class="under_title">Vem är du?</h5>
+                        <p class="text_personal">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur quae, aut voluptatem inventore similique ipsa totam, perspiciatis illo accusantium atque perferendis optio quidem, libero doloribus!
                         </p>
+                        <p class="text_personal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto explicabo at commodi neque ratione placeat nemo maxime?</p>
                     </div>
-                </div>
-
-                <div class="personal">
-                    <img src="img/dmitry-vechorko-E9PFbdhZmus-unsplash.jpg" class="bild_personal" alt="Bild på personal">
-                    <div class="personal_text">
-                        <h4 class="namn">Adam Kronberg</h4>
-                        <p class="text_personal">	
-                            January 10, 2007   
-                        
-                            En text om ingenting
-                            Det här är precis vad rubriken antyder: en text om ingenting. Faktum är att den faktiskt handlar om så lite att det nästan är mindre än noll.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
+                </article>
+            </section>
 
         </main>
 
